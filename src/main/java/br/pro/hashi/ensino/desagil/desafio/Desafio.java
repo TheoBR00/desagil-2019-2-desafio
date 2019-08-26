@@ -8,9 +8,9 @@ public class Desafio {
         target.row = 4;
         target.col = 14;
 
-        HumanPlayer humanPlayer = new HumanPlayer();
-        humanPlayer.row = 0;
-        humanPlayer.col = 0;
+        HumanPlayer humanPlayer = new HumanPlayer(0, 0);
+        humanPlayer.changeRowToTen();
+        System.out.println(humanPlayer.getRow());
         humanPlayer.board = board;
 
         CpuPlayer cpuPlayer = new CpuPlayer();
